@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server2",
+      "author": "typicode2"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "test":{
+    "button": true
+  },
+  "data": [
+
+    {
+      "riqi": 201903,
+      "bwz": 123,
+      "sy": 456
+    },
+    {
+      "riqi": 201904,
+      "bwz": 123,
+      "sy": 456
+    },
+    {
+      "riqi": 201905,
+      "bwz": 123,
+      "sy": 456
+    }
+  ]
+}

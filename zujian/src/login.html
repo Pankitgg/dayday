@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>login</title>
+    <script type="text/javascript" src="login.js"></script>
+    <link href="css/login.css" type="text/css" rel="stylesheet"/>
+    <!--    <script>$(document).keyup(function (event) {-->
+    <!--        if (event.keyCode == 13) {-->
+    <!--            login()-->
+    <!--        }-->
+    <!--    })-->
+    <!--    </script>-->
+</head>
+
+<body>
+<div id="login">
+    <div class="dologo"></div>
+    <div class="login_box">
+        <form method="post" id="form_login" style="
+                ">
+
+            <div style="height: 16px;line-height: 16px;color: red;text-align: center;"></div>
+            <h4></h4>
+            <h3>潍柴动力  奔腾不息</h3>
+            <h2>Product Life Cycle Data Analysis</h2>
+            <div class="dw_center">
+                <input type="hidden" name="key" id="key"/>
+                <ul>
+                    <li><span class="usernamePic"></span><input type="text" name="userName" id="userName"
+                                                                class="inpLogin"
+                                                                placeholder="用户名"/></li>
+                    <li><span class="passwordPic"></span><input type="password" name="password" id="password"
+                                                                class="inpLogin" placeholder="请输入密码"
+                                                                autocomplete="off"/></li>
+                    <li><input type="button" name="submit" class="btn" value="登录" onClick="login();"/></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
