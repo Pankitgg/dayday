@@ -77,16 +77,19 @@ import {BrowserRouter} from 'react-router'
 import Char from "./javascript/components/char";
 import ReactRedux from "./javascript/components/reactRedux";
 import Person from "./javascript/components/person";
-import 'antd/dist/antd.css'
+import './css/antd.css'
+import Tututu from "./javascript/components/tututu";
+import Tool from "./javascript/components/tool";
 class Index extends Component {
     constructor(props) {
         super(props)
     }
 
     render() {
-        return (<div><Person></Person>
-
-
+        // return (<div><Person></Person>
+        //         <div><Tututu></Tututu></div>
+return (<div>
+<Tool/>
             {/*<Provider store={store}>*/}
             {/*    <ReactRedux/>*/}
             {/*    <button>hhj</button>*/}

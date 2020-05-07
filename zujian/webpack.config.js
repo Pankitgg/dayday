@@ -22,7 +22,7 @@ module.exports={
     module: {//第三方模块,配置规则
         rules: [//第三方匹配规则
             {test:/\.js|jsx$/,use:'babel-loader',exclude:/node_modules/},
-            {test:/\.css|less$/,use:['style-loader','less-loader','css-loader']},
+            {test:/\.css|less$/,use:['style-loader','css-loader','less-loader'],exclude:/node_modules/},
         ]
     }
 }
