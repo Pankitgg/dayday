@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Tool extends Component {
+class Timetool extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -25,4 +25,4 @@ class Tool extends Component {
     }
 }
 
-export default Tool;
+export default Timetool;

@@ -68,8 +68,8 @@ console.log("气候很好")
 // import  {fetchEventchar} from './javascript/service/service.js'
 // fetchEventchar("123123").then(console.log('ok'))
 
-import { createStore } from 'redux';
-import { Provider, connect } from 'react-redux';
+import {createStore} from 'redux';
+import {Provider, connect} from 'react-redux';
 import ReactDOM from 'react-dom'
 
 import React, {Component} from 'react';
@@ -79,7 +79,8 @@ import ReactRedux from "./javascript/components/reactRedux";
 import Person from "./javascript/components/person";
 import './css/antd.css'
 import Tututu from "./javascript/components/tututu";
-import Tool from "./javascript/components/tool";
+import Timetool from "./javascript/components/timetool";
+
 class Index extends Component {
     constructor(props) {
         super(props)
@@ -88,48 +89,47 @@ class Index extends Component {
     render() {
         // return (<div><Person></Person>
         //         <div><Tututu></Tututu></div>
-return (<div>
-<Tool/>
-            {/*<Provider store={store}>*/}
-            {/*    <ReactRedux/>*/}
-            {/*    <button>hhj</button>*/}
-            {/*    <Xiangqing></Xiangqing>*/}
-            {/*    <Char></Char></Provider>*/}
+        return (<div>
+                {/*<Lay*/}
+                <Timetool/>
+                <Provider store={store}>
+                    <ReactRedux/>
+                    <button>hhj</button>
+                    <Xiangqing></Xiangqing>
+                        <Char></Char></Provider>
 
             </div>
         );
     }
 }
-//action
-const upupup={
-    type:'increasr',
+
+//创建action事件
+const upupup = {
+    type: 'increasr',
     text: '增加'
 };
-const downdown={
-    type:'decrease',
-    text:'减少'
+const downdown = {
+    type: 'decrease',
+    text: '减少'
 };
 
-const tiger=10000
-//reducer
-const reducer=(state=tiger,action)=>{
+const tiger = 10000
+//创建reducer用于改变state
+const reducer = (state = tiger, action) => {
     switch (action.type) {
         case 'increasr':
             return state += 666;
         case 'decrease':
-            return state -=666;
+            return state -= 666;
         default:
             return state;
 
     }
 }
 
-//创建store
+//创建store用于存储值
 
-const store=createStore(reducer);
-
-
-
+const store = createStore(reducer);
 
 
 ReactDOM.render(<Index></Index>, document.getElementById("app"))//

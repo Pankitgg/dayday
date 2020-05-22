@@ -17,6 +17,10 @@ class ReactRedux extends Component {
     }
 }
 
+// jdp()
+// {
+//     return 11
+// }
 
 
 //
@@ -45,7 +49,6 @@ class ReactRedux extends Component {
 // }
 //
 // //创建store
-//
 // const store=createStore(reducer);
 
 //需要渲染什么数据
