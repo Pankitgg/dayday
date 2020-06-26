@@ -80,6 +80,7 @@ import Person from "./javascript/components/person";
 import './css/antd.css'
 import Tututu from "./javascript/components/tututu";
 import Timetool from "./javascript/components/timetool";
+import Lesstest from "./javascript/components/lesstest";
 
 class Index extends Component {
     constructor(props) {
@@ -89,14 +90,14 @@ class Index extends Component {
     render() {
         // return (<div><Person></Person>
         //         <div><Tututu></Tututu></div>
-        return (<div>
+        return (<div><Lesstest/>
                 {/*<Lay*/}
-                <Timetool/>
-                <Provider store={store}>
-                    <ReactRedux/>
-                    <button>hhj</button>
-                    <Xiangqing></Xiangqing>
-                        <Char></Char></Provider>
+                {/*<Timetool/>*/}
+                {/*<Provider store={store}>*/}
+                {/*    <ReactRedux/>*/}
+                {/*    <button>hhj</button>*/}
+                {/*    <Xiangqing></Xiangqing>*/}
+                {/*        <Char></Char></Provider>*/}
 
             </div>
         );

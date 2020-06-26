@@ -117,7 +117,6 @@ const height=500;
             const model = node.getModel();
             alert(model.value)
         });
-
         function refreshDragedNodePosition(e) {
             const model = e.item.get('model');
             model.fx = e.x;
